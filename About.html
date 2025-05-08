@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script defer src="scrolling.js"></script>
+    <script defer src="secret.js"></script>
+    <script defer src="idle.js"></script>
+    <script defer src="changeback.js"></script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: auto;
+    width: auto; 
+    background-image: url(backgroundwebsite.png);
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+}
+h1{
+    text-align: center;
+    user-select: none;
+}
+.Title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 125px;
+    color: white;
+
+}
+.AboutText{
+    margin: 100px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    color: bisque;
+    padding-top: 50px;
+}
+.AboutText p{
+    text-align: justify;
+    text-align: center;
+    font-size: 25px;
+    color: bisque;
+}
+body{
+    background-image: url(backgroundwebsite.png);
+    height: auto;
+}
+.AboutDraw{
+    width: 100px;
+    border: 25px solid bisque;
+    padding: 200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-timing-function: linear;
+    animation: AboutDraw 10s ease-in-out infinite;
+}
+@keyframes AboutDraw {
+    0% { background-image: url(aboutdrawback.jpg);}
+    33% { background-image: url(drawslide2.jpg);}
+    66% {background-image:url(drawslide3.jpg) ;}
+    100%{background-image: url(aboutdrawback.jpg);}
+}
+.AboutRender{
+    width: 100px;
+    border: 25px solid bisque;
+    padding: 200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    animation-timing-function: linear;
+    animation: AboutRender 20s ease-in-out infinite;
+}
+#drawnote{
+    text-align: justify;
+    color: wheat;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px;
+}
+@keyframes AboutRender {
+    0% { background-image: url(aboutrenderback.png);}
+    33% { background-image: url(renderslide2.png);}
+    66% {background-image:url(renderslide3.png) ;}
+    100%{background-image: url(aboutrenderback.png);}
+}
+.AboutAnimated{
+    width: 100px;
+    border: 25px solid bisque;
+    padding: 200px;
+    margin: auto;
+    background-image: url(aboutanimatedback.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-timing-function: linear;
+    animation: AboutAnimated 10s ease-in-out infinite;
+}
+
+@keyframes AboutAnimated {
+    0% { background-image: url(aboutanimatedback.jpeg);}
+    33% { background-image: url(animslide2.png);}
+    66% {background-image:url(animslide3.png) ;}
+    100%{background-image: url(aboutanimatedback.jpeg);}
+}
+
+#rendernote{
+    text-align: justify;
+    color: wheat;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px;
+}
+#animatednote{
+    text-align: justify;
+    color: wheat;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px;
+}
+footer{
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 120px;
+    background-color: grey;
+    text-align: center;
+    color: antiquewhite;
+    opacity: 0.9;
+}
+footer div{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+@media (max-width: 600px){
+    .AboutDraw{
+        margin: auto;
+        width: auto;
+    }
+}
+@media (max-width: 600px){
+    .AboutRender{
+        margin: auto;
+        width: auto;
+    }
+}
+@media (max-width: 600px){
+    .AboutAnimated{
+        margin: auto;
+        width: auto;
+    }
+}
+    </style>
+<link rel="stylesheet" type="text/css" href="idle.css">
+<link rel="stylesheet" type="text/css" href="secret.css">
+<link rel="stylesheet" type="text/css" href="menunav.css">
+<title>
+About
+</title>
+</head>
+<body>
+    <div id="idleOverlay">
+        <img id="idleGif" src="" alt="idlinggif">
+    </div>
+    <div id="Menu">
+        <a href="index.html"><img src="Digital Logo2.png" alt=""></a>
+        <div><a href="About.html">About</a></div>
+        <div><a href="Profile.html">Profile</a></div>
+        <div><a href="Gallery.html">Gallery</a></div>
+        <div><a href="ContactMe.html">Contacts</a></div>
+        <button id="backgroundchange" >Change Background</button>
+    </div>
+    <h1 class="Title">The <span id="magicWord" style="cursor: pointer;">Comfy</span> Cabin</h1>
+    <div id="gifContainer">
+        <img id="magicGif" src="" alt="playinggif">
+    </div>
+    <audio id="audiogif"></audio>
+    <div class="AboutText">
+        <p>Welcome to my Portfolio Website or known as my Comfy Cabin. I'm a Freelance Artist on both 3D and 2D but I mostly use 3D Engine such as SourceFilmmaker and Blender, I can still do 2D but can only do headshot drawing either for character reference or character designing. I can accept Request or Collaboration if possible :D.
+        </p>
+    </div>
+    <div class="AboutDraw">
+    </div>
+    <p id="drawnote"> Drawing is much more a side hobby for me as I can only spend during my little to free time. I May be rusty as i got back drawing around last year yet I am still improving and practicing to this day.</p>
+    <div class="AboutRender">
+    </div>
+    <p id="rendernote"> 3D Renders is where I mostly spend most of my time as I primarily use SourceFilmmaker, which is a 2012 old engine and it may be old but still remains gold when combined with photoshotop for post processing, Blender is probably my next 3D Engine and for 3D modelling to practice.</p>
+    <div class="AboutAnimated">
+    </div>
+    <p id="animatednote"> I rarely do Animations yet I can only afford a short one like gifs. I've known the Principle of Animations but I'm still practicing on applying them. I can animate them in either in 2D or 3D way too.</p>
+    <footer>
+        <div>&copy;The Comfy Cabin 2025</div>
+        All Images Uploaded belongs to the Creator of the Website.
+        </footer>
+</body>
+
+</html>

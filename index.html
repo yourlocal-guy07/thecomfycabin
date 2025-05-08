@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script defer src="scrolling.js"></script>
+    <script defer src="secret.js"></script>
+    <script defer src="idle.js"></script>
+    <script defer src="changeback.js"></script>
+<meta name="viewport" content="width=device-width, inititial-scale=1.0">
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    user-select: none;
+}
+body{
+    height: auto;
+    width: auto; 
+    background-image: url(backgroundwebsite.png);
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+}
+footer{
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 120px;
+    background-color: grey;
+    text-align: center;
+    color: antiquewhite;
+    opacity: 0.9;
+}
+footer div{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="My_Website.css">
+<link rel="stylesheet" type="text/css" href="idle.css">
+<link rel="stylesheet" type="text/css" href="secret.css">
+<link rel="stylesheet" type="text/css" href="menunav.css">
+
+<title>
+Homepage
+</title>
+<body>
+    <div id="idleOverlay">
+        <img id="idleGif" src="" alt="idlinggif">
+    </div>
+    <div id="Menu">
+        <a href="index.html"><img src="Digital Logo2.png" alt=""></a>
+        <div><a href="About.html">About</a></div>
+        <div><a href="Profile.html">Profile</a></div>
+        <div><a href="Gallery.html">Gallery</a></div>
+        <div><a href="ContactMe.html">Contacts</a></div>
+        <button id="backgroundchange" >Change Background</button>
+    </div>
+<h1 class="Title">The <span id="magicWord" style="cursor: pointer;">Comfy</span> Cabin</h1>
+<div id="gifContainer">
+    <img id="magicGif" src="" alt="playinggif">
+</div>
+<audio id="audiogif"></audio>
+<div class="About">
+    <h2>About</h2>
+    <p>You can take a look to know more about my hobbies that I currently have today.</p>
+</div>
+<div class="Profile">
+    <h2>Profile</h2>
+    <p>You can view more of my Current Profile and Status.</p>
+</div>
+<div class="Gallery">
+    <h2>Gallery</h2>
+    <div id="Drawing"><a href="Drawing.html">Drawing</a></div>
+    <div id="Renders"><a href="3D Renders.html">3D Renders</a></div>
+    <div id="Animated"><a href="Animated.html">Animated</a></div>
+</div>
+<div class="ContactMe">
+    <h2>Contact Me</h2>
+    <p>Need a collab? A Request? A Commission? Contact me through an Email or DM me on my existing social media accounts.</p>
+</div>
+<footer>
+<div>&copy;The Comfy Cabin 2025</div>
+All Images Uploaded belongs to the Creator of the Website.
+</footer>
+</body>
+</head>
+</html>

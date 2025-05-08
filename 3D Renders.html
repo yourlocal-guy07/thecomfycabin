@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script defer src="scrolling.js"></script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+        #Menu{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    column-gap: 10px;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+#Menu.scrolled{
+    background-color: rgb(163, 145, 115);
+    color: white;
+}
+#Menu img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    left: 100px;
+    border: 1px solid wheat;
+    border-radius: 50%;
+}
+#Menu img:hover{
+    box-shadow: 0 0 5px #fff, 0 0 10px #fffbc3, 0 0 30px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3;
+}
+#Menu > div{
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+#Menu a{
+    text-decoration: none;
+    color: wheat
+}
+#Menu div:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fffbc3, 0 0 30px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3;
+    color: aliceblue;
+}
+        .Gallery{
+            height: auto;
+            width: auto;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            text-align: left;
+            text-indent: 50px;
+            padding: 50px;
+            row-gap: 10px;
+        }
+        .Gallery div{
+            border: 2px solid black;
+            height: 400px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .Gallery a{
+            text-decoration: none;
+            color: wheat;
+        }
+        .Gallery div:hover{
+            text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 5px #fffbc3, 0 0 50px #fffbc3, 0 0 5px #fffbc3, 0 0 5px #fffbc3, 0 0 5px #fffbc3;
+            color: aliceblue;
+        }
+        body{
+            background-image: url(backgroundwebsite.png);
+            height: auto;
+        }
+        .Back{
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        .Back a{
+            text-decoration: none;
+            font-size: 30px;
+            color: wheat
+        }
+        .Back a:hover{
+            text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 5px #fffbc3, 0 0 50px #fffbc3, 0 0 5px #fffbc3, 0 0 5px #fffbc3, 0 0 5px #fffbc3;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: wheat
+        }
+        footer{
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 120px;
+    background-color: grey;
+    text-align: center;
+    color: antiquewhite;
+    opacity: 0.9;
+}
+footer div{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+@media (max-width: 600px){
+    #Menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px){
+    #Menu img{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+        </style>
+        <title>
+        3D Renders
+        </title>
+        <body>
+            <div id="Menu">
+                <a href="index.html"><img src="Digital Logo2.png" alt=""></a>
+                <div><a href="About.html">About</a></div>
+                <div><a href="Profile.html">Profile</a></div>
+                <div><a href="Gallery.html">Gallery</a></div>
+                <div><a href="ContactMe.html">Contacts</a></div>
+            </div>
+            <div class="Back">
+                <div><a href="Gallery.html">&laquo;Back</a></div>
+            </div>
+            <h1>My 3D Renders</h1>
+            <footer>
+                <div>&copy;The Comfy Cabin 2025</div>
+                All Images Uploaded belongs to the Creator of the Website.
+                </footer>
+        </body>
+</head>
+</html>
