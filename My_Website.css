@@ -1,0 +1,277 @@
+.Title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 125px;
+    color: white;
+
+}
+.About{
+    margin: auto;
+    height: 512px;
+    width: 1024px;
+    padding-left: 125px;
+    padding-right: 125px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(backgroundabout.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.About:hover{
+    opacity: .8;
+}
+.About p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.2s;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+    color: wheat;
+}
+.About:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+.About  h2{
+    text-align: center;
+    color: bisque
+}
+.Profile{
+    margin: auto;
+    height: 512px;
+    width: 1024px;
+    padding-left: 125px;
+    padding-right: 125px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-position: center;
+    background-image: url(backgroundprofile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.Profile:hover{
+    opacity: .8;
+}
+.Profile p{
+    
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.2s;
+    color: wheat;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+.Profile:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+.Profile > h2{
+    text-align: center;
+    color: bisque;
+}
+.Gallery{
+    margin: auto;
+    height: 512px;
+    width: 1024px;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-image: url(backgroundgallery.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    margin-top: 20px;
+    row-gap: 25px;
+    padding-bottom: 75px;
+}
+.Gallery > div{
+    
+    border: 1px solid black;
+    text-align: center;
+    opacity: .5;
+    font-size: 25px;
+}
+.Gallery:hover{
+    opacity: .8;
+}
+.Gallery div:hover{
+    opacity: 1;
+}
+.Gallery > h2{
+    text-align: center;
+    color:bisque
+}
+.Gallery #Drawing{
+    background-image: url(drawback2.jpeg);
+    background-size: 100%;
+    background-position: center;
+    width: auto;
+    height: auto;
+    
+}
+.Gallery #Renders{
+    background-image: url(renderback2.png);
+    background-size: 100%;
+    background-position: center;
+    width: auto;
+    height: auto;
+}
+.Gallery #Animated{
+background-image: url(animatedback.png);
+background-size: 100%;
+background-position: center;
+width: auto;
+height: auto;
+}
+.Gallery a{
+    text-decoration: none;
+    color: bisque;
+}
+.ContactMe{
+    margin: auto;
+    height: 512px;
+    width: 1024px;
+    padding-left: 125px;
+    padding-right: 125px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(backgroundcontact.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.ContactMe:hover{
+    opacity: .8;
+}
+.ContactMe p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.2s;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+    color: wheat;
+}
+.ContactMe:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+.ContactMe > h2{
+    text-align: center;
+    color: bisque;
+}
+#Menu{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 120px auto auto auto auto 240px;
+    padding: 10px;
+    column-gap: 10px;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+#Menu.scrolled{
+    background-color: rgb(163, 145, 115);
+    color: white;
+}
+#Menu img{
+    width: 100px;
+    left: 50px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    border: 1px solid wheat;
+    border-radius: 50%;
+}
+#Menu #backgroundchange{
+    font-size: 30px;
+    color: wheat;
+    cursor: pointer;
+    background-color: rgba(245, 222, 179, 0);
+    border: hidden;
+    text-align: center;
+    padding: 10px;
+    
+}
+#Menu img:hover{
+    box-shadow: 0 0 5px #fff, 0 0 10px #fffbc3, 0 0 30px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3;
+}
+#Menu > div{
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+#Menu a{
+    text-decoration: none;
+    color: wheat
+}
+#Menu div:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fffbc3, 0 0 30px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3, 0 0 35px #fffbc3;
+    color: aliceblue;
+}
+@media (max-width: 600px){
+    #Menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px){
+    #Menu img{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+@media (max-width: 600px){
+    .About{
+        height: auto;
+        width: auto;
+    }
+}
+@media (max-width: 600px){
+    .About p{
+      font-size: medium;
+      text-align: center;
+      position: relative;
+      bottom: 70px;
+    }
+}
+@media (max-width: 600px){
+    .Profile{
+        height: auto;
+        width: auto;
+    }
+}
+@media (max-width: 600px){
+    .Profile p{
+      font-size: medium;
+      text-align: center;
+      position: relative;
+      bottom: 70px;
+    }
+}
+@media (max-width: 600px){
+    .Gallery{
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px){
+    .ContactMe{
+        height: auto;
+        width: auto;
+    }
+}
+@media (max-width: 600px){
+    .ContactMe p{
+      font-size: medium;
+      text-align: center;
+      position: relative;
+      bottom: 70px;
+    }
+}
+

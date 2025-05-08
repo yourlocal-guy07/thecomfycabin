@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script defer src="scrolling.js"></script>
+    <script defer src="secret.js"></script>
+    <script defer src="idle.js"></script>
+    <script defer src="changeback.js"></script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    width: auto; 
+    background-image: url(backgroundwebsite.png);
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+}
+h1{
+    text-align: center;
+    user-select: none;
+}
+.Title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 125px;
+    color: white;
+
+}
+body{
+    background-image: url(backgroundwebsite.png);
+    height: auto;
+}
+footer{
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 120px;
+    background-color: grey;
+    text-align: center;
+    color: antiquewhite;
+    opacity: 0.9;
+}
+footer div{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+.Contacts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.Contacts img{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Contacts p{
+    color: wheat;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0;
+    padding: 20px;
+    transform: scale(0);
+}
+#deviant:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s;
+}
+#disc:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s;
+}
+#twit:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s;
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-self: space-evenly;
+}
+.contact-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contact-center-title{
+    font-weight: 600;
+    color: wheat;
+    font-size: 80px;
+    margin-bottom: 5px;
+}
+.contact-center-title hr{
+    border: none;
+    width: 620px;
+    height: 5px;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: black;
+    border-radius: 25px;
+}
+.contact-center textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid red;
+}
+.contact-inputs::placeholder{
+    color: black;
+}
+.contact-center button{
+    display:flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(120deg, wheat, orange);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+@media (max-width: 800px){
+    .Contacts{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (max-width: 800px){
+    .Contacts p{
+        text-align: center;
+        
+    }
+}
+@media (max-width: 800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-center-title{
+     text-align: center;
+    }
+
+}
+    </style>
+<link rel="stylesheet" type="text/css" href="idle.css">
+<link rel="stylesheet" type="text/css" href="secret.css">
+<link rel="stylesheet" type="text/css" href="menunav.css">
+<title>
+Contact Me
+</title>
+</head>
+<body>
+    <div id="idleOverlay">
+        <img id="idleGif" src="" alt="idlinggif">
+    </div>
+    <div id="Menu">
+        <a href="Website.html"><img src="Digital Logo2.png" alt=""></a>
+        <div><a href="About.html">About</a></div>
+        <div><a href="Profile.html">Profile</a></div>
+        <div><a href="Gallery.html">Gallery</a></div>
+        <div><a href="ContactMe.html">Contacts</a></div>
+        <button id="backgroundchange" >Change Background</button>
+    </div>
+    <h1 class="Title">The <span id="magicWord" style="cursor: pointer;">Comfy</span> Cabin</h1>
+    <div id="gifContainer">
+        <img id="magicGif" src="" alt="playinggif">
+    </div>
+    <audio id="audiogif"></audio>
+    <div class="contact container">
+        <form action="https://api.web3forms.com/submit" method="POST"" class="contact-center">
+            <div class="contact-center-title">
+                <h2>Be In Touch!</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="8f9f20db-76bf-42cc-bcd2-cf218de226dc">
+            <input type="text" name="name" placeholder="Your Name:" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email:" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message:" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="Contacts">
+        <div id="deviant"><img src="deviantart.png" alt=""><p>For College Project, I should Keep it Private</p></div>
+        <div id="disc"><img src="discord.png" alt=""><p>For College Project, I should Keep it Private</p></div>
+        <div id="twit"><img src="twitter.png" alt=""><p>For College Project, I should Keep it Private</p></div>
+    </div>
+</body>
+<footer>
+    <div>&copy;The Comfy Cabin 2025</div>
+    All Images Uploaded belongs to the Creator of the Website.
+    </footer>
+</html>

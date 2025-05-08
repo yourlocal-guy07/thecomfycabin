@@ -1,0 +1,17 @@
+#idleOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+
+#idleOverlay img {
+    max-width: 90%;
+    max-height: 90%;
+  }

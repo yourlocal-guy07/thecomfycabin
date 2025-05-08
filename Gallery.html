@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script defer src="scrolling.js"></script>
+    <script defer src="secret.js"></script>
+    <script defer src="idle.js"></script>
+    <script defer src="changeback.js"></script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    width: auto; 
+    background-image: url(backgroundwebsite.png);
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+}
+h1{
+    text-align: center;
+    user-select: none;
+}
+.Title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 125px;
+    color: white;
+
+}
+.Gallery{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: left;
+    text-indent: 50px;
+    padding: 50px;
+    row-gap: 10px;
+}
+.Gallery div{
+    height: 400px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.Gallery a{
+    text-decoration: none;
+    color: wheat;
+}
+.Gallery div:hover{
+    text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 5px #fffbc3, 0 0 50px #fffbc3, 0 0 5px #fffbc3, 0 0 5px #fffbc3, 0 0 5px #fffbc3;
+    color: aliceblue;
+}
+.Gallery #Drawing{
+    background-image: url(drawback.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+.Gallery #Drawing:hover{
+    background-image: url(drawback2.jpeg);
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.Gallery #Renders{
+    background-image: url(renderback2.png);
+    background-repeat: no-repeat;
+    background-size: 1790px 400px;
+    background-position: center;
+    transition: 1s;
+}
+.Gallery #Renders:hover{
+    background-image: url(renderback.png);
+    background-size: 1080px 400px;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.Gallery #Animated{
+    background-image: url(animatedback.png);
+    background-position: center;
+    transition: 1s;
+    
+}
+.Gallery #Animated:hover{
+    background-image: url(animatedback2.gif);
+    background-size: 1080px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+body{
+    background-image: url(backgroundwebsite.png);
+    height: auto;
+}
+footer{
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 120px;
+    background-color: grey;
+    text-align: center;
+    color: antiquewhite;
+    opacity: 0.9;
+}
+footer div{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+@media (max-width: 600px){
+    .Gallery a{
+        position: relative;
+        left: 55px;
+        right: auto;
+    }
+}
+    </style>
+<link rel="stylesheet" type="text/css" href="idle.css">
+<link rel="stylesheet" type="text/css" href="secret.css">
+<link rel="stylesheet" type="text/css" href="menunav.css">
+<title>
+Gallery
+</title>
+</head>
+<body>
+    <div id="idleOverlay">
+        <img id="idleGif" src="" alt="idlinggif">
+    </div>
+    <div id="Menu">
+        <a href="Website.html"><img src="Digital Logo2.png" alt=""></a>
+        <div><a href="About.html">About</a></div>
+        <div><a href="Profile.html">Profile</a></div>
+        <div><a href="Gallery.html">Gallery</a></div>
+        <div><a href="ContactMe.html">Contacts</a></div>
+        <button id="backgroundchange" >Change Background</button>
+    </div>
+    <h1 class="Title">The <span id="magicWord" style="cursor: pointer;">Comfy</span> Cabin</h1>
+    <div id="gifContainer">
+        <img id="magicGif" src="" alt="playinggif">
+    </div>
+    <audio id="audiogif"></audio>
+    <div class="Gallery">
+        <div id="Drawing"><a href="Drawing.html">Drawing</a></div>
+        <div id="Renders"><a href="3D Renders.html">3D Renders</a></div>
+        <div id="Animated"><a href="Animated.html">Animated</a></div>
+    </div>
+    <footer>
+        <div>&copy;The Comfy Cabin 2025</div>
+        All Images Uploaded belongs to the Creator of the Website.
+        </footer>
+</body>
+
+</html>
